@@ -5,8 +5,8 @@
     "author": "Jeffrey Muller <jeffrey.muller92@gmail.com>",
     "contributors": [],
     "dependencies": {
-        "mdns2": ">=2.1.4",
-        "daap": "0.1.0"
+        "mdns": ">=2.2.9",
+        "daap": "git@github.com:coffeesam/node-daap.git"
     },
     "repository": {
         "type": "git",

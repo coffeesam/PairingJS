@@ -6,7 +6,7 @@
  * Licensed under the MIT license.
  */
 
-var mdns      = require('mdns2'),
+var mdns      = require('mdns'),
     net       = require('net'),
     libdaap   = require('daap'),
     service   = new mdns.ServiceType('_touch-remote._tcp'),
@@ -78,7 +78,7 @@ Buffer.prototype.arraycopy = function(srcBuffer, srcPos, destPos, length) {
 var server = net.createServer(function (socket) {
 
     socket.on('data', function (data) {
-
+        console.log(data);
         var code = new Buffer(8);
 
         code.nextBytes();
